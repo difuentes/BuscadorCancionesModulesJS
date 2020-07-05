@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!--CDN boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+    <main id="contenido" class="contenido">
+            <h1>Letras de Canciones</h1>
+            <div class="contenedor">
+                    <div id="buscar" class="buscar">
+                            <h2>Búsqueda</h2>
+                            <p>Busca por artista y nombre:</p>
+                            <p><span style="color:red"> * </span>Obligatorio</p>
+                            <form action="#" id="formulario-buscar">
+                                <div class="input">
+                                    <label for="artista">Artista: <span>*</span></label>
+                                    <input type="text" id="artista" placeholder="Artista">
+                                </div>
+                                <div class="input">
+                                    <label for="cancion">Canción: <span>*</span></label>
+                                    <input type="text" id="cancion" placeholder="Nombre Canción">
+                                </div>
+
+                                <div class="input enviar">
+                                    <input type="submit" value="Buscar">
+                                </div>
+
+                                <div id="mensajes"></div>
+                            </form>
+                    </div>
+                    <div class="letra-resultado">
+                            <h2>Resultado</h2>
+                            <div id="resultado"></div>
+                    </div>
+            </div>
+    </main>
+
+    
+    <script src="js/app.js" type="module"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
